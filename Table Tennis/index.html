@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Game</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="./js/time.js" defer></script>
   <script src="./js/Ball.js" defer></script>
   <script src="./js/Player.js" defer></script>
   <script src="./js/index.js" defer></script>
 </head>
-
 <body>
   <div class="monitor">
+    <div class="score-board">
+      <div class="player">
+        <h4>Player 1</h4>
+        <div id="score-box-1">
+          0
+        </div>
+      </div>
+      <div class="player">
+        <h4>Player 2</h4>
+        <div id="score-box-2">
+          0
+        </div>
+      </div>
+    </div>
     <div class="game-board">
       <canvas id="canvas" width="800" height="400"></canvas>
     </div>
     <div class="intro">
-      <img src="imgs/instructPeeps.png" alt="Instructions" width="800" height="500">
+      <img src="background.png" alt="Instructions" width="800" height="500">
     </div>
     <div class="start">
       <div class="start__button">

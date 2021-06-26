@@ -3,26 +3,27 @@ class Player {
     this.x = x;
     this.y = y;
     this.width = 10;
+    this.height = 100;
     this.color = color;
     this.score = 0;
   }
 
-  draw(height) {
+  draw() {
     context.fillStyle = this.color;
-    context.fillRect(this.x, this.y, this.width, height);
+    context.fillRect(this.x, this.y, this.width, this.height);
   }
 
   moveUp() {
-    
-    if (this.y > 15) {
-      this.y -= 15;
+    context.clearRect(this.x, this.y, this.width, this.height);
+    if (this.y > 10) {
+      this.y -= 10;
     }
   }
 
   moveDown() {
     context.clearRect(this.x, this.y, this.width, this.height);
-    if (this.y + this.height < 385) {
-      this.y += 15;
+    if (this.y + this.height < 390) {
+      this.y += 10;
     }
   }
 
