@@ -1,3 +1,3 @@
-# ironHack 
+# ironhack 
 
-what a journey so far
+looking back I can endure some pretty harsh stuff 🤣
